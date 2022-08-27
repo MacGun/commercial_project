@@ -1,4 +1,5 @@
 import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from 'typeorm';
+import { AddressEntity } from './address.entity';
 import { CartEntity } from './cart.entity';
 import { TimeColumns } from './common/time-column';
 
@@ -31,4 +32,7 @@ export class UserEntity extends TimeColumns {
 
     @OneToMany(() => CartEntity, (cart) => cart.user)
     carts: CartEntity[];
+
+    @OneToMany(() => AddressEntity, (address) => address.user)
+    addresses: AddressEntity[];
 }
