@@ -26,8 +26,4 @@ export class AuthService {
 
         return accessToken;
     }
-
-    kakaoLogin(user) {
-        return user;
-    }
 }
