@@ -21,6 +21,9 @@ export class PerchaseEntity extends TimeColumns{
 
     @Column()
     fixedPrice: number;
+
+    @Column()
+    fixedDeliveryFee: number;
     /**
      * below
      */

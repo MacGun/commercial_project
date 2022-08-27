@@ -24,6 +24,8 @@ export class ProductEntity {
     @Column({default: 999})
     maxQuantity: number;
 
+    @Column()
+    deliveryFee: number;
     /**
      * below
      */
